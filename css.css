@@ -1,0 +1,33 @@
+ body                                  {font-family: Arial, Helvetica, sans-serif}
+ div                                   {margin:   0px   0px   0px   0px}
+ p                                     {margin:  10px   0px   0px   0px; font-size:17.5px}
+ h1                                    {margin:   0px   0px   5px   0px}
+ h2                                    {margin:  10px   0px   0px   0px; color:red }
+ h3                                    {margin:  10px   0px   0px   0px; color:blue}
+ table                                 {border-collapse:collapse}
+ th                                    {border: 2px solid black; padding: 6px 8px; text-align:left }
+ td                                    {border: 2px solid black; padding: 6px 8px; text-align:right}
+ a                                     {color:blue}
+.mono                                  {font-family: "Lucida Console", "Courier New", monospace}
+.grid                                  {display:grid; margin:   0px   0px   0px  20px; grid-template-columns: 1fr 1fr; grid-column-gap:80px}
+.here                                  {background-color:mediumvioletred; color:white}
+.menu                                  {background-color:darkgreen; overflow:hidden}
+.menu .icon                            {display:none}
+.menu a                                {float:left;    display:block;    padding: 14px 16px; color:white; font-size:17px; text-align:center; text-decoration:none}
+.menu a:hover, .drop:hover .butt       {background-color:mediumvioletred; color:white}
+.drop                                  {float:left; overflow:hidden}
+.drop .butt                            {margin:0; border:none; outline:none; padding: 14px 16px; background-color:inherit; color:white; font-size:17px; font-family:inherit}
+.drop:hover .dropitem                  {display:block}
+.dropitem                              {position:absolute; display:none; background-color:darkgreen; z-index:1; min-width:160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)}
+.dropitem a                            {float:none; display:block; padding: 12px 16px; color:white; text-align:left; text-decoration:none}
+.dropitem a:hover                      {background-color:mediumvioletred; color:white}
+@media screen and (max-width:600px)    {
+.menu a.icon                           {float:right; display:block}
+.menu a:not(:first-child), .drop .butt {display:none}}
+@media screen and (max-width:600px)    {
+.menu.responsive                       {position:relative}
+.menu.responsive .icon                 {position:absolute; top:0; right:0}
+.menu.responsive a                     {float:none; display:block; text-align:left}
+.menu.responsive .drop                 {float:none}
+.menu.responsive .drop .butt           {width:100%; display:block; text-align:left}
+.menu.responsive .dropitem             {position:relative}}
