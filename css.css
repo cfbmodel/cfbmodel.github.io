@@ -9,11 +9,11 @@
  td                                    {border: 2px solid black; padding: 6px 8px; text-align:right}
  a                                     {color:blue}
 .mono                                  {font-family: "Lucida Console", "Courier New", monospace}
-.grid                                  {display:grid; margin:   0px   0px   0px  20px; grid-template-columns: 1fr 1fr; grid-column-gap:80px}
+.grid                                  {display:grid; margin:   0px   0px   0px   0px; grid-template-columns: 1fr 1fr; column-gap:0px}
 .here                                  {background-color:mediumvioletred; color:white}
 .menu                                  {background-color:darkgreen; overflow:hidden}
 .menu .icon                            {display:none}
-.menu a                                {float:left;    display:block;    padding: 14px 16px; color:white; font-size:17px; text-align:center; text-decoration:none}
+.menu a                                {float:left; display:block; padding: 14px 16px; color:white; font-size:17px; text-align:center; text-decoration:none}
 .menu a:hover, .drop:hover .butt       {background-color:mediumvioletred; color:white}
 .drop                                  {float:left; overflow:hidden}
 .drop .butt                            {margin:0; border:none; outline:none; padding: 14px 16px; background-color:inherit; color:white; font-size:17px; font-family:inherit}
