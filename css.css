@@ -1,0 +1,9 @@
+ *            {box-sizing: border-box}
+ body         {font-family: Calibri, sans-serif}
+ h1           {margin: 10px auto}
+ p            {font-size: 20px}
+.menu         {width: 100%; overflow: auto; background: black}
+.menu a       {float: left; color: white; width: 11.11%; padding: 10px; font-size: 20px; text-align: center; text-decoration: none}
+.menu a.here  {color: black; background: gold; font-weight: bold}
+.menu a:hover {color: black; background: gold; font-weight: bold}
+@media screen and (max-width: 500px) {.menu a {float: none; width: 100%; display: block; text-align: left}}
