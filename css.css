@@ -16,7 +16,9 @@
 .menu a.here  {font-weight: bold; color: black; background: gold}
 .menu a:hover {font-weight: bold; color: black; background: gold}
 @media screen and (max-width: 500px) {.menu a {float: none; width: 100%; display: block; text-align: left}}
-.num          {background: lavender ; font-weight: bold                    ; font-size: 1.05rem; padding: 0.4688rem}
-.top          {background: palegreen; font-family: 'Roboto Mono', monospace; font-size: 1.15rem; padding: 0.5134rem; text-align: center}
-.con          {background: palegreen; font-family: 'Roboto Mono', monospace; font-size: 1.15rem; padding: 0.5134rem; text-align: center; white-space: pre}
-.rec          {background: pink     ; font-family: 'Roboto Mono', monospace; font-size: 1.15rem; padding: 0.5134rem; text-align: center}
+.ven          {text-align : center; font-size: 1.15rem; padding: 0.5134rem; background: palegreen; font-family: 'Roboto Mono', monospace}
+.loc          {text-align : center; font-size: 1.15rem; padding: 0.5134rem; background: pink     ; font-family: 'Roboto Mono', monospace}
+.pow          {text-align : center; font-size: 1.15rem; padding: 0.5134rem; background: palegreen; font-family: 'Roboto Mono', monospace}
+.ran          {font-weight: bold  ; font-size: 1.05rem; padding: 0.4688rem; background: lavender }
+.con          {text-align : center; font-size: 1.15rem; padding: 0.5134rem; background: palegreen; font-family: 'Roboto Mono', monospace; white-space: pre}
+.rec          {text-align : center; font-size: 1.15rem; padding: 0.5134rem; background: pink     ; font-family: 'Roboto Mono', monospace}
