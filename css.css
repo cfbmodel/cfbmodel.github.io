@@ -3,7 +3,7 @@
  p            {font-size: 1.05rem; line-height: 1.30rem}
  img          {max-width: 100%; height: auto}
  h1           {margin: 10px auto}
- h2           {text-align: center}
+ h2           {text-align: left}
  h3           {margin-bottom: 10px}
  table        {line-height: 1rem; border: 4px solid black; border-collapse: collapse}
  th           {text-align: left ; font-size: 1.10rem; padding: 0.4911rem; border: 2px solid black}
