@@ -1,0 +1,24 @@
+ body                               {font-size:20px; font-family: Calibri, Arial, Helvetica, sans-serif}
+ h1                                 {color:orangered; font-size:35px; margin: 12px 0px 10px 0px}
+ a                                  {color:blue; text-decoration:none}
+#now                                {color:black; background:gold; font-weight:bold}
+.hor                                {overflow:hidden; background:darkgreen; font-family:monospace}
+.hor a                              {float:left; display:block; color:white; text-align:center; font-size:18px; padding: 14px 16px}
+.hor a:hover, .ver:hover .but       {color:white; background:orangered}
+.hor .icon                          {display:none}
+.ver                                {float:left; overflow:hidden; font-family:monospace}
+.ver .but                           {color:white; background:inherit; border:none; outline:none; font-size:18px; font-family:monospace; margin:0; padding: 14px 16px}
+.ver:hover .ver-item                {display:block}
+.ver-item                           {position:absolute; min-width:140px; display:none; background:darkgreen; z-index:1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)}
+.ver-item a                         {float:none; display:block; color:white; text-align:left; text-decoration:none; padding: 12px 16px}
+.ver-item a:hover                   {color:white; background:orangered}
+@media screen and (max-width:600px) {
+.hor a.icon                         {float:right; display:block}
+.hor a:not(:first-child), .ver .but {display:none}}
+@media screen and (max-width:600px) {
+.hor.resp                           {position:relative}
+.hor.resp a                         {float:none; display:block; text-align:left}
+.hor.resp a.icon                    {position:absolute; top:0; right:0}
+.hor.resp .ver                      {float:none}
+.hor.resp .ver .but                 {width:100%; display:block; text-align:left}
+.hor.resp .ver-item                 {position:relative}}
