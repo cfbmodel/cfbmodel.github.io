@@ -1,6 +1,8 @@
  body                               {font-size:20px; font-family: Calibri, Arial, Helvetica, sans-serif}
  h1                                 {color:orangered; font-size:35px; margin: 12px 0px 10px 0px}
  a                                  {color:blue; text-decoration:none}
+ th                                 {text-aligh:left }
+ td                                 {text-aligh:right}
 #now                                {color:black; background:gold; font-weight:bold}
 .hor                                {overflow:hidden; background:darkgreen; font-family:monospace}
 .hor a                              {float:left; display:block; color:white; text-align:center; font-size:18px; padding: 14px 16px}
