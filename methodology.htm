@@ -23,17 +23,13 @@ function myFunction() {
 var x = document.getElementById("myNav");
 if (x.className === "hor") {x.className += " resp";} else {x.className = "hor";}}
 </script>
-
 <div style="margin: 2em 20% 2em 20%"><p>
-
 This innovative college football preseason prediction model has been around since 2011.
 It has gone through a few rebrands, starting as "Fort Heresy", becoming "Cap Heresy", and finally moving to its current iteration "CFB Model by Dunham" (MBD).
 See the "Author" page for historical accomplishments of the model in terms of prediction accuracy.</p><p>
-
 The core tenet of the model is to devise a power rating system based on what has changed since the end of the previous season.
 As a power system, past wins and losses do not matter, with predicted wins and losses coming as an organic output of the power and the schedule.
 Only FBS teams are explicitly rated, though FBS vs FCS games are included in the modeling.</p><p><span style="border-bottom: 2px solid black">
-
 Metrics for 2025         </span><br>
 Previous Season Injuries <br>
 Previous Season Turnovers<br>
@@ -46,11 +42,19 @@ Returning Starts         <br>
 Returning Production     <br>
 Depth                    <br>
 Seniors                  </p><p>
-
 Data for every metric is converted to a common scale (last season’s final power ratings) in order to quantify and combine.
 Duplication caused by overlapping metrics (such as Returning Starts and Seniors) is removed or minimized.</p><p>
+Each metric is weighted by using its Pearson correlation coefficient.
+A good amount of history is gathered for each metric, and its correlation to a fused Sagarin + Massey power rating is computed across those years.</p><p>
+Four stripes of correlation computed:
+The value                 of the metric vs the value                 of the power rating
+The value                 of the metric vs the year-over-year change of the power rating
+The year-over-year change of the metric vs the value                 of the power rating
+The year-over-year change of the metric vs the year-over-year change of the power rating</p><p>
 
-as much history as possible, Correlations are computed  types (4), Correlation value (best of 4) used to weight categories.
 
-</p></div>
+highest used
+
+
+The stripe used also dictates how the metric is converted to the common scale (last season’s final power ratings).</p></div>
 </body></html>
