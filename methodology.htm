@@ -29,7 +29,17 @@ It has gone through a few rebrands, starting as "Fort Heresy", becoming "Cap Her
 See the "Author" page for historical accomplishments of the model in terms of prediction accuracy.</p><p>
 The core tenet of the model is to devise a power rating system based on what has changed since the end of the previous season.
 As a power system, past wins and losses do not matter, with predicted wins and losses coming as an organic output of the power and the schedule.
-Only FBS teams are explicitly rated, though FBS vs FCS games are included in the modeling.</p><p><span style="border-bottom: 2px solid black">
+Only FBS teams are explicitly rated, though FBS vs FCS games are included in the modeling.</p><p>
+Data for every metric is converted to a common scale (last season’s final power ratings) in order to quantify and combine.
+Duplication caused by overlapping metrics (such as Returning Starts and Seniors) is removed or minimized.</p><p>
+Each metric is weighted by using a Pearson correlation coefficient.
+A good amount of history is gathered for each metric, and its correlation to a fused Sagarin + Massey power rating is computed across those years.</p><p><span style="border-bottom: 2px solid black">
+Four stripes of correlation are computed                                                </span><br>
+The value                 of the metric vs the value                 of the power rating (Value-Value)<br>
+The value                 of the metric vs the year-over-year change of the power rating (Value-Delta)<br>
+The year-over-year change of the metric vs the value                 of the power rating (Delta-Value)<br>
+The year-over-year change of the metric vs the year-over-year change of the power rating (Delta-Delta)</p><p>
+The highest of the four coefficients is used. The stripe of correlation also determines how the metric is converted to the common scale (last season’s final power ratings).</p><p><span style="border-bottom: 2px solid black">
 Metrics for 2025            </span><br>
 2024 Composite Power Ratings<br>
 Previous Season Injuries    <br>
@@ -42,15 +52,5 @@ Recruiting                  <br>
 Returning Starts            <br>
 Returning Production        <br>
 Depth                       <br>
-Seniors                     </p><p>
-Data for every metric is converted to a common scale (last season’s final power ratings) in order to quantify and combine.
-Duplication caused by overlapping metrics (such as Returning Starts and Seniors) is removed or minimized.</p><p>
-Each metric is weighted by using a Pearson correlation coefficient.
-A good amount of history is gathered for each metric, and its correlation to a fused Sagarin + Massey power rating is computed across those years.</p><p><span style="border-bottom: 2px solid black">
-Four stripes of correlation are computed                                                </span><br>
-The value                 of the metric vs the value                 of the power rating (Value-Value)<br>
-The value                 of the metric vs the year-over-year change of the power rating (Value-Delta)<br>
-The year-over-year change of the metric vs the value                 of the power rating (Delta-Value)<br>
-The year-over-year change of the metric vs the year-over-year change of the power rating (Delta-Delta)</p><p>
-The highest of the four coefficients is used. The stripe of correlation also determines how the metric is converted to the common scale (last season’s final power ratings).</p></div>
+Seniors                     </p></div>
 </body></html>
