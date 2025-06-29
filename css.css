@@ -1,16 +1,16 @@
  body                               {font-size:1.125em; font-family: Calibri, Arial, Helvetica, sans-serif}
- h1                                 {color:blue; font-size:1.8em; margin: 12px 0px 10px 0px}
+ h1                                 {color:black; font-size:1.8em; margin: 12px 0px 10px 0px}
  a                                  {color:blue; text-decoration:none}
  table                              {border: 1px solid black; border-collapse:collapse}
  th                                 {border: 1px solid black; padding-left:10px; padding-right:10px; text-align:left }
  td                                 {border: 1px solid black; padding-left:10px; padding-right:10px; text-align:right}
 #now                                {color:black; background:gold; font-weight:bold}
 .hor                                {overflow:hidden; background:darkgreen; font-family:monospace}
-.hor a                              {float:left; display:block; color:white; text-align:center; font-size:18px; padding: 14px 16px}
+.hor a                              {float:left; display:block; color:white; text-align:center; font-size:1.25em; padding: 14px 16px}
 .hor a:hover, .ver:hover .but       {color:white; background:orangered}
 .hor .icon                          {display:none}
 .ver                                {float:left; overflow:hidden; font-family:monospace}
-.ver .but                           {color:white; background:inherit; border:none; outline:none; font-size:18px; font-family:monospace; margin:0; padding: 14px 16px}
+.ver .but                           {color:white; background:inherit; border:none; outline:none; font-size:1.25em; font-family:monospace; margin:0; padding: 14px 16px}
 .ver:hover .ver-item                {display:block}
 .ver-item                           {position:absolute; min-width:140px; display:none; background:darkgreen; z-index:1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)}
 .ver-item a                         {float:none; display:block; color:white; text-align:left; text-decoration:none; padding: 12px 16px}
