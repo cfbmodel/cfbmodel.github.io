@@ -4,7 +4,7 @@
  a                                  {color:blue; text-decoration:none}
  table                              {border: 1px solid black; border-collapse:collapse}
  th                                 {border: 1px solid black; padding-left:10px; padding-right:10px; text-align:left }
- td                                 {border: 1px solid black; padding-left:50px; padding-right:10px; text-align:right; font-family: w3-monospace}
+ td                                 {border: 1px solid black; padding-left:10px; padding-right:10px; text-align:right; font-family: Monaco, "Andale Mono", "Lucida Console", Consolas, "Courier New", monospace}
 #now                                {color:black; background:gold; font-weight:bold}
 .hor                                {overflow:hidden; background:darkgreen; font-family:monospace}
 .hor a                              {float:left; display:block; color:white; text-align:center; font-size:1.175em; padding: 14px 16px}
