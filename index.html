@@ -24,12 +24,13 @@
 <div style="float:left ;margin: 2em 0em 0em 2em"><p style="font-size:1.150em; font-weight:bold">2025 predictions are LIVE. I hope everybody enjoys the season.</p></div>
 <div style="float:right;margin: 2em 2em 0em 0em"><img src="https://cfbmodel.github.io/logo.jpg" alt="MBD Logo" width="192" height="144"></div><br style="clear:both">
 <div style="            margin: 0em 0em 0em 2em">
-<button onclick="downloadCsv()">7Download Week 0 spreads as CSV</button><br><br>
+<button onclick="downloadCsv()">8Download Week 0 spreads as CSV</button><br><br>
 <a href="https://cfbmodel.github.io/power-new.htm"><span style="font-size:1.150em; text-decoration:underline">Power after Week 0</span></a></div><br><br><br><br><br><br><br><br>
 <script>
 function downloadCsv() {
 const csvData = 
-"Spread,Favorite,Underdog\nValue1,Value2,Value3\nValue3,Value4,Value5";
+"Spread,Favorite,Underdog\nValue1,Value2,Value3\nValue3,Value4,Value5
+";
 const encodedUri = encodeURI("data:text/csv;charset=utf-8," + csvData);
 const link = document.createElement("a");
 link.setAttribute("href", encodedUri);
