@@ -29,7 +29,7 @@
 <script>
 function downloadCsv() {
 const csvData = 
-"Spread,Favorite,Underdog\n2.05,Stanford,Hawaii\n4.18,Kansas State,Iowa State\n17.95,Kansas,Fresno State\n6.32,Sam Houston,Western Kentucky\n19.17,UNLV,Idaho State";
+"Spread,Favorite,Underdog\n2.05,Stanford,Hawaii\n4.18,Kansas State,Iowa State\n17.95,Kansas,Fresno State\n6.32,Sam Houston,Western Kentucky\n19.17,UNLV,Idaho State\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog\n0.00,Favorite,Underdog";
 const encodedUri = encodeURI("data:text/csv;charset=utf-8," + csvData);
 const link = document.createElement("a");
 link.setAttribute("href", encodedUri);
