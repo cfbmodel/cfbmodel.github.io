@@ -25,4 +25,18 @@
 <div style="float:right;margin: 2em 2em 0em 0em"><img src="https://cfbmodel.github.io/logo.jpg" alt="MBD Logo" width="192" height="144"></div><br style="clear:both">
 <div style="            margin: 0em 0em 0em 2em"><a href="https://cfbmodel.github.io/power-new.htm"><span style="font-size:1.250em; text-decoration:underline">Power after Week 0</span></a></div><br><br><br><br><br><br><br><br>
 <div align="center"><a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3303865&c=9911908" alt="AmazingCounters.com"></a><h5 style="margin-top:0px">Unique Visitors</h5></div><br>
+<button onclick="downloadCsv()">Download CSV</button>
+<script>
+function downloadCsv() {
+  // Replace this with your actual CSV data
+  const csvData = "Header1,Header2\nValue1,Value2\nValue3,Value4"; 
+  const encodedUri = encodeURI("data:text/csv;charset=utf-8," + csvData);
+  const link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", "my_data.csv"); // Set desired filename
+  document.body.appendChild(link); // Append to body to make it clickable
+  link.click(); // Programmatically click the link
+  document.body.removeChild(link); // Remove the link after download
+}
+</script>
 </body></html>
